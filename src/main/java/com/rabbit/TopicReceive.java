@@ -1,6 +1,6 @@
 package com.rabbit;
 
-import com.quyiwang.dto.Person;
+import com.quyiwang.dto.Book;
 import org.springframework.amqp.rabbit.annotation.RabbitHandler;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;
@@ -16,12 +16,12 @@ import org.springframework.stereotype.Component;
 public class TopicReceive {
     @RabbitListener(queues="insurance.link")
     @RabbitHandler//监听器监听指定的Queue
-    public void process1(Person person) {
-        System.out.println("link获取的消息:"+person.toString());
+    public void process1(Book book) {
+        System.out.println("link获取的消息:"+book.toString());
     }
     @RabbitListener(queues="insurance.hb")
     @RabbitHandler//监听器监听指定的Queue
-    public void process2(Person person) {
-        System.out.println("hb获取的消息:"+person.toString());
+    public void process2(Book book) {
+        System.out.println("hb获取的消息:"+book.toString());
     }
 }
