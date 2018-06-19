@@ -1,17 +1,20 @@
-/*
-package com.dto;
+package com.config;
 
-import org.springframework.amqp.support.converter.Jackson2JsonMessageConverter;
-import org.springframework.amqp.support.converter.MessageConverter;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-
-@Configuration
+/**
+* @Description:貌似不需要配置
+* @Author: huangweiyue
+* @Date:  2018/6/19 20:18
+* @Param: 
+* @Return: 
+* @ModifiedBy:
+* @Exception
+**/
+ 
+/*@Configuration
 public class MyAMQPConfig {
 
     @Bean
     public MessageConverter messageConverter(){
         return new Jackson2JsonMessageConverter();
     }
-}
-*/
+}*/
